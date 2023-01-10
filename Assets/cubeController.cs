@@ -43,6 +43,14 @@ public class cubeController : MonoBehaviour
             //cubePosition.x -= 1;
             gameObject.transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+            gameObject.transform.Translate(Vector3.up);
+        }
         //cube.transform.position = cubePosition;
     }
 }
